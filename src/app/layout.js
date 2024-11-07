@@ -2,9 +2,24 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const poppins = localFont({
-  src: "./fonts/Poppins-Regular.ttf",
+  src: [
+    {
+      path: "./fonts/Poppins-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Poppins-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Poppins-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+  ],
   variable: "--font-poppins",
-  weight: "100 900",
 });
 
 export const metadata = {
